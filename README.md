@@ -1,12 +1,35 @@
-# React + Vite
+# Landing Page Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern landing page built using **React**, **Vite**, and **Tailwind CSS**. The project is designed to be fast, responsive, and easy to customize.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19**: Built with the latest version of React for a modern development experience.
+- **Vite**: Fast build tool for development and production.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **Lucide Icons**: Beautiful and customizable icons for your landing page.
+- **Responsive Design**: Fully responsive layout for all devices.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide Icons](https://lucide.dev/)
+- [ESLint](https://eslint.org/): For code linting and maintaining code quality.
+
+## Getting Started
+
+Follow these steps to set up the project locally on your machine.
+
+### Prerequisites
+
+- **Node.js**: Make sure you have Node.js installed. You can download it from [here](https://nodejs.org/).
+- **npm**: npm is bundled with Node.js, so you don't need to install it separately.
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/landing-page.git
+   cd landing-page
