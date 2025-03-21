@@ -33,3 +33,56 @@ Follow these steps to set up the project locally on your machine.
    ```bash
    git clone https://github.com/Nimasaghi-dev/landing-page.git
    cd landing-page
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+   This will start the Vite development server. Open your browser and navigate to `http://localhost:5173` to view the landing page.
+
+### Available Scripts
+
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the project for production.
+- `npm run lint`: Runs ESLint to check for code issues.
+- `npm run preview`: Previews the production build locally.
+
+## Folder Structure
+
+```
+landing-page/
+├── public/              # Static assets (e.g., images, fonts)
+├── src/                 # Source code
+│   ├── components/      # React components
+│   ├── styles/          # Custom styles (if needed)
+│   ├── App.jsx          # Main application component
+│   └── main.jsx         # Entry point
+├── .eslintrc.js         # ESLint configuration
+├── tailwind.config.js   # Tailwind CSS configuration
+├── postcss.config.js    # PostCSS configuration
+├── vite.config.js       # Vite configuration
+├── package.json         # Project dependencies and scripts
+└── README.md            # Project documentation
+```
+
+## Customization
+
+- **Tailwind CSS**: Modify the `tailwind.config.js` file to customize your design system.
+- **Lucide Icons**: Replace or add icons from the [Lucide Icons library](https://lucide.dev/).
+- **Content**: Update the content in the `src/components/` files to match your needs.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeatureName`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeatureName`).
+5. Open a pull request.
