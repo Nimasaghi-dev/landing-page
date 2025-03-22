@@ -16,7 +16,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
                     <div className="flex items-center flex-shrink-0">
                         <img className='h-10 w-10 mr-2' src={logo} alt="logo" />
-                        <span className="text-xl tracking-tight">Landing Page</span>
+                        <span className="text-xl tracking-tight">VirtualR</span>
                     </div>
                     <ul className='hidden lg:flex ml-14 space-x-12'>
                         {navItems.map((item, index) => (
@@ -26,10 +26,10 @@ const Navbar = () => {
                         ))}
                     </ul>
                     <div className="hidden lg:flex justify-center space-x-12 items-center">
-                        <a href="#" className='py-2 px-3 border rounded-md'>
+                        <a href="#" className='py-2 px-3 border rounded-md hover:bg-neutral-800'>
                             Sign In
                         </a>
-                        <a href="#" className='bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md'>
+                        <a href="#" className='bg-gradient-to-r from-yellow-500 to-yellow-800 py-2 px-3 rounded-md hover:from-yellow-400 hover:to-yellow-700'>
                             Create an account
                         </a>
                     </div>
@@ -49,10 +49,10 @@ const Navbar = () => {
                             ))}
                         </ul>
                         <div className="flex space-x-6">
-                            <a href="#" className='py-2 px-3 border rounded-md'>
+                            <a href="#" className='py-2 px-3 border rounded-md hover:bg-neutral-800'>
                                 Sign In
                             </a>
-                            <a href="#" className='py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800'>
+                            <a href="#" className='py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800 hover:from-orange-400 hover:to-orange-700'>
                                 Create an account
                             </a>
                         </div>
