@@ -18,6 +18,7 @@ const App = () => {
         <Price />
         <Testimonial />
         <Footer />
+        <DarkMode />
       </div>
     </div>
   )
