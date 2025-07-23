@@ -10,7 +10,9 @@ const Price = () => {
         <div className="flex flex-wrap">
             {pricingOptions.map((Option, index) => (
                 <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
-                    <div className="p-10 border border-gray-300 dark:border-neutral-700 rounded-xl bg-white dark:bg-transparent">
+                    <div className="relative p-10 border border-white/30 dark:border-white/20 rounded-xl bg-white/40 dark:bg-neutral-900/60 backdrop-blur-xl shadow-lg dark:shadow-black/30 overflow-hidden">
+                        {/* Glass gloss gradient overlay */}
+                        <div className="pointer-events-none absolute top-0 left-0 w-full h-1/3 rounded-t-xl bg-gradient-to-b from-white/60 to-transparent opacity-70" />
                         <p className="text-4xl mb-8 text-gray-900 dark:text-white">
                             {Option.title}
                             {Option.title === "Pro" && (
