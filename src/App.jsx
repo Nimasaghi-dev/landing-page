@@ -25,10 +25,18 @@ const App = () => {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className="max-w-7xl mx-auto pt-20 px6">
         <HeroSection />
-        <FeatureSection />
-        <WorkFlow />
-        <Price />
-        <Testimonial />
+        <div id="features">
+          <FeatureSection />
+        </div>
+        <div id="workflow">
+          <WorkFlow />
+        </div>
+        <div id="pricing">
+          <Price />
+        </div>
+        <div id="testimonials">
+          <Testimonial />
+        </div>
         <Footer />
       </div>
     </div>
