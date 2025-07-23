@@ -9,7 +9,7 @@ const DarkMode = ({ darkMode, setDarkMode }) => {
       aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
       type="button"
     >
-      {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+      {darkMode ? '☀️' : '🌙'}
     </button>
   );
 };

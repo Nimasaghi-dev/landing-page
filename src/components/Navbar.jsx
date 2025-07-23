@@ -19,19 +19,19 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                         <img className='h-10 w-10 mr-2' src={logo} alt="logo" />
                         <span className="text-xl tracking-tight text-gray-900 dark:text-white">VirtualR</span>
                     </div>
-                    <ul className='hidden lg:flex ml-14 space-x-12'>
+                    <ul className='hidden lg:flex ml-14 space-x-12 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:ml-0'>
                         {navItems.map((item, index) => (
                             <li key={index}>
                                 <a href={item.href} className="text-gray-900 dark:text-white hover:text-orange-700 dark:hover:text-yellow-400">{item.label}</a>
                             </li>
                         ))}
                     </ul>
-                    <div className="hidden lg:flex justify-center space-x-12 items-center">
+                    <div className="hidden lg:flex justify-center space-x-4 items-center lg:ml-auto">
                         <a href="#" className='py-2 px-3 border border-gray-300 dark:border-neutral-700 rounded-md text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-neutral-800'>
                             Sign In
                         </a>
                         <a href="#" className='bg-gradient-to-r from-yellow-500 to-yellow-800 py-2 px-3 rounded-md text-white hover:from-yellow-400 hover:to-yellow-700'>
-                            Create an account
+                            Create account
                         </a>
                         <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
                     </div>
