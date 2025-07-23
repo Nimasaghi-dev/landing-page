@@ -17,20 +17,20 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 <div className="flex justify-between items-center">
                     <div className="flex items-center flex-shrink-0">
                         <img className='h-10 w-10 mr-2' src={logo} alt="logo" />
-                        <span className="text-xl tracking-tight">VirtualR</span>
+                        <span className="text-xl tracking-tight text-gray-900 dark:text-white">VirtualR</span>
                     </div>
                     <ul className='hidden lg:flex ml-14 space-x-12'>
                         {navItems.map((item, index) => (
-                            <li key={{ index }}>
-                                <a href={item.href}>{item.label}</a>
+                            <li key={index}>
+                                <a href={item.href} className="text-gray-900 dark:text-white hover:text-orange-700 dark:hover:text-yellow-400">{item.label}</a>
                             </li>
                         ))}
                     </ul>
                     <div className="hidden lg:flex justify-center space-x-12 items-center">
-                        <a href="#" className='py-2 px-3 border rounded-md hover:bg-neutral-800'>
+                        <a href="#" className='py-2 px-3 border border-gray-300 dark:border-neutral-700 rounded-md text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-neutral-800'>
                             Sign In
                         </a>
-                        <a href="#" className='bg-gradient-to-r from-yellow-500 to-yellow-800 py-2 px-3 rounded-md hover:from-yellow-400 hover:to-yellow-700'>
+                        <a href="#" className='bg-gradient-to-r from-yellow-500 to-yellow-800 py-2 px-3 rounded-md text-white hover:from-yellow-400 hover:to-yellow-700'>
                             Create an account
                         </a>
                         <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
@@ -43,19 +43,19 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                     </div>
                 </div>
                 {mobileDrawerOpen && (
-                    <div className="fixed-right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+                    <div className="fixed-right-0 z-20 bg-white dark:bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
                         <ul>
                             {navItems.map((item, index) => (
                                 <li key={ index } className='py-4'>
-                                    <a href={item.href}>{item.label}</a>
+                                    <a href={item.href} className="text-gray-900 dark:text-white hover:text-orange-700 dark:hover:text-yellow-400">{item.label}</a>
                                 </li>
                             ))}
                         </ul>
                         <div className="flex space-x-6">
-                            <a href="#" className='py-2 px-3 border rounded-md hover:bg-neutral-800'>
+                            <a href="#" className='py-2 px-3 border border-gray-300 dark:border-neutral-700 rounded-md text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-neutral-800'>
                                 Sign In
                             </a>
-                            <a href="#" className='py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800 hover:from-orange-400 hover:to-orange-700'>
+                            <a href="#" className='py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800 text-white hover:from-orange-400 hover:to-orange-700'>
                                 Create an account
                             </a>
                         </div>
