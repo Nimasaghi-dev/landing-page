@@ -2,8 +2,9 @@ import { Menu, X } from 'lucide-react';
 import { useState } from 'react'; // to make the icons dynamic
 import logo from '../assets/logo.png';
 import { navItems } from '../constants';
+import DarkMode from './DarkMode';
 
-const Navbar = () => {
+const Navbar = ({ darkMode, setDarkMode }) => {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
     const toggleNavBar = () => {
@@ -32,11 +33,13 @@ const Navbar = () => {
                         <a href="#" className='bg-gradient-to-r from-yellow-500 to-yellow-800 py-2 px-3 rounded-md hover:from-yellow-400 hover:to-yellow-700'>
                             Create an account
                         </a>
+                        <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
                     </div>
                     <div className="lg:hidden md:flex flex-col justify-end">
                         <button onClick={toggleNavBar}>
                             {mobileDrawerOpen ? <X /> : <Menu />}
                         </button>
+                        <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
                     </div>
                 </div>
                 {mobileDrawerOpen && (
