@@ -36,7 +36,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                         <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
                     </div>
                     <div className="lg:hidden md:flex flex-col justify-end">
-                        <button onClick={toggleNavBar}>
+                        <button onClick={toggleNavBar} className="text-gray-900 dark:text-white">
                             {mobileDrawerOpen ? <X /> : <Menu />}
                         </button>
                         <DarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
